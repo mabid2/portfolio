@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Mohammed's Portfolio</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" class="brand-logo center">Mohammed (Kamran) Abid</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact_info">Contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+      <a href="#contact" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">Contact</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center black-text text-lighten-2">Full Stack Developer</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">"Develop a passion for learning. If you do, you will never cease to grow"                  -Anthony J. D'Angelo</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-2">Resume</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div id="about" class="row">
+        <div>
+          <div class="icon-block">
+            <div id="student_description">
+                  <img src="/img/kamran.png" alt="" class="img-responsive img-thumbnail media-object pull-left">
+            </div>
+            <h2 class="center brown-text"><i class="material-icons">About Me</i></h2>
+            <h5 class="white-text center">Why I became a Developer?</h5>
+
+            <p class="white-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ever since I was a child, I have been intrigued by the way technology works. The dynamic movement in the tech industry convinced me to finally change my major from Industrial Engineering to Computer Programming because this skill set would allow me to develop my curious, and enhance my creativity in the field of technology. Now I am passionate about learning new technologies and working with people to create amazing projects that impact our community at large. I have the ability to easily pick up other technologies when needed and am committed to bringing positivity and confidence to the workplace everyday. </p>
+            <p class="white-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a tech enthusiast, and a lover of nature. He originally attended San Jose State University for Industrial Engineering, but left to start a immersive programming bootcamp called Coding Dojo, where he learned how to be a sufficient web-developer.</p>
+          </div>
+        </div>
+
+        <!-- <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div> -->
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+    </div>
+    <div class="parallax"><img  src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <!-- <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3> -->
+
+  <div id="wrapper" class="container">
+    <div id="student_description">
+      <div class="media-group">
+        <div class="media">
+          <img src="/img/kamran.png" alt="" class="img-responsive img-thumbnail media-object pull-left">
+          <div id="portfolio" class="media-body">
+            <h1 class="media-heading">Mohammed (Kamran) Abid's<small> Portfolio</small></h1>
+
+          </div>
+        </div>
+      </div>
+      <ul id="skill_set_list" class="nav nav-pills">
+        <li class="active"><a href="#php_mvc" data-toggle="tab">Python</a></li>
+        <li><a href="#node_javascript" data-toggle="tab">Node and JavaScript</a></li>
+        <li><a href="#ruby_rails" data-toggle="tab">Ruby on Rails</a></li>
+      </ul>
+    </div>
+    <div id="portfolio_content">
+      <div id="portfolio_body" class="tab-content">
+        <div class="panel-body tab-pane active" id="php_mvc">
+          <div class="project_list list-group">
+            <a href="http://village88.com" class="project_link list-group-item" data-description="Collaborated in a team of four developers to create a web app that allows the users to search for movies and discover filming locations, also allows users to search for a location and see which movies were filmed in the specific location in San Francisco, California." data-title="SF Film Spot" data-technologies="HTML/CSS, Python, and Bootstrap">
+              <img src="/img/village88.png" class="center-block img-thumbnail">
+              <div class="clearfix"></div>
+              <h5 class="list-group-item-heading text-center">SF Film Spot</h5>
+            </a>
+            <a href="http://codingdojo.com" class="project_link list-group-item" data-description="Is a website that provides information about Coding Dojo’s 12-week web development bootcamp. People can apply to learn how to code through the website. Everyone, with or without any coding experience, is invited to join in. Bootcamps are held in two branches in United States: California and Seattle." data-title="Coding Dojo" data-technologies="HTML/CSS, Codeigniter, PHP, JQuery, and Stripe and Paypal for payments.">
+              <img src="/img/codingdojo.png" class="center-block img-thumbnail">
+              <div class="clearfix"></div>
+              <h5 class="list-group-item-heading text-center">Coding Dojo</h5>
+            </a>
+            <a href="http://spottrender.com" class="project_link list-group-item" data-description="Improve sales and brand loyalty by A/B testing your video spots with Spot Trender website. This is mainly designed for advertisers to test how much attention they can get from their viewers." data-title="SpotTrender" data-technologies="HTML/CSS, Codeigniter, PHP, JQuery, Highcharts API, and Stripe for payments.">
+              <img src="/img/spottrender.png" class="center-block img-thumbnail">
+              <div class="clearfix"></div>
+              <h5 class="list-group-item-heading text-center">SpotTrender</h5>
+            </a>
+          </div>
+          <div class="preview_pane_container">
+            <h4></h4>
+            <p class="project_description"></p>
+            <p class="technologies_used"></p>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="preview_pane"></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="panel-body tab-pane" id="node_javascript">
+          <div class="project_list list-group">
+            <a href="https://help.codingdojo.com" class="project_link list-group-item" data-description="This is an application designed especially for Coding Dojo students where they can get real-time, remote assistance. This application is powered with video call, chat and screen share feature." data-title="Help Application" data-technologies="HTML/CSS, NodeJS, Express.io, Javascripts, and JQuery.">
+              <img src="/img/help.png" class="center-block img-thumbnail">
+              <div class="clearfix"></div>
+              <h5 class="list-group-item-heading text-center">Help App</h5>
+            </a>
+            <a href="http://node.codingdojo.com" class="project_link list-group-item" data-description="This is a simple application powered by Node.js to teach Coding Dojo bootcamp students how broadcasting works. This helps them understand the flow of functions and how do they work real time." data-title="Node Demonstration App" data-technologies="HTML/CSS, NodeJS, Express.io, Javascripts, and Jquery.">
+              <img src="/img/node.png" class="center-block img-thumbnail">
+              <div class="clearfix"></div>
+              <h5 class="list-group-item-heading text-center">Node Demonstration App</h5>
+            </a>
+            <a href="http://algorithm.codingdojo.com" class="project_link list-group-item" data-description="This is an application used by Coding Dojo bootcamp students to practice solving programs. This is specially designed to help students enhance their coding and analytical skills." data-title="Algorithm Application" data-technologies="HTML/CSS, Javascripts, and Jquery.">
+              <img src="/img/algorithm.png" class="center-block img-thumbnail">
+              <div class="clearfix"></div>
+              <h5 class="list-group-item-heading text-center">Algorithm Application</h5>
+            </a>
+          </div>
+
+          <div class="preview_pane_container">
+            <h4></h4>
+            <p class="project_description"></p>
+            <p class="technologies_used"></p>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="preview_pane"></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="panel-body tab-pane" id="ruby_rails">
+          <div class="project_list list-group">
+            <a href="http://codingdojo.herokuapp.com" class="project_link list-group-item" data-description="This is a site where Coding Dojo bootcamp students interact and advertise their skills to the recruiters. The students can post their resumes and portfolios on this site." data-title="Recruiters' Library App" data-technologies="HTML/CSS, Ruby on Rails, Javascripts, and Jquery.">
+              <img src="/img/recruiters.png" class="center-block img-thumbnail">
+              <div class="clearfix"></div>
+              <h5 class="list-group-item-heading text-center">Recruiters' Library App</h5>
+            </a>
+          </div>
+          <div class="preview_pane_container">
+            <h4></h4>
+            <p class="project_description"></p>
+            <p class="technologies_used"></p>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="preview_pane"></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+          <!-- <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer blue-grey darken-1">
+    <div class="container ">
+      <div id="footer_div">
+
+          <h5 id="contact_info" class="white-text">Contact Me</h5>
+          <p class="grey-text text-lighten-4">Please send me a message and I will get back to you!!</p>
+      <div class="fixed-action-btn horizontal">
+            <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+            </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">Resume</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+      </div>
+
+          <form action='/msg_portfolio' class="col s12" method="post">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="name" type="text" class="validate" name="name" style="font-size:20px">
+                <label for="name">Name</label>
+              </div>
+
+
+              <div class="input-field col s6">
+                <input id="email" type="email" class="validate" name='email' style="font-size:20px">
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea" name='message' style="font-size:20px"></textarea>
+                <label for="textarea1">Message</label>
+              </div>
+              <input class="btn-large waves-effect waves-light blue-grey darken-2" type="submit" value="Send Message">
+            </div>
+          </form>
+
+
+
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="#">Kamran</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/materialize.js"></script>
+  <script src="/init.js"></script>
+
+  <script src="/js/jquery-1.11.0.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/portfolio.js"></script>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/common_iteration_2.css">
+  <link rel="stylesheet" href="/css/common.css">
+
+  <!-- SMOOTH SCROLLING  -->
+
+  <!-- <script type="text/javascript">
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+        scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+    });
+  </script>
+ -->
+  </body>
+</html>
