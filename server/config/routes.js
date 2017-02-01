@@ -17,8 +17,8 @@ app.get('/', function(req, res){
 
 app.post('/msg_portfolio', function(req, res){
   client.sendMessage({
-    to : "+15108338227",
-    from : "+15102463557",
+    to : twiliokeys.myphone,
+    from : twiliokeys.mytwiliophone,
     body : "This is a Message from your portfolio: Name: " + req.body.name+ " Email: "+ req.body.email+ " says: "+ req.body.message
   }, function(err, data){
     if(err){
