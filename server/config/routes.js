@@ -1,6 +1,9 @@
 var path = require('path');
 var portfolio = require('../controllers/portfolio.js')//we can get functions from portfolio
-var client = require('twilio')
+var twiliokeys = require('./twiliokeys.js')
+console.log("\n\n\n!!!!\nTWILIO KEYS:")
+console.log(twiliokeys.SID, twiliokeys.token)
+var client = require('twilio')(twiliokeys.SID, twiliokeys.token);
 module.exports = function(app){
 	app.get('/portfolio', function(req, res) {
 		console.log('/portfolio')
@@ -14,8 +17,8 @@ app.get('/', function(req, res){
 
 app.post('/msg_portfolio', function(req, res){
   client.sendMessage({
-    to :
-    from :
+    to : "+15108338227",
+    from : "+15102463557",
     body : "This is a Message from your portfolio: Name: " + req.body.name+ " Email: "+ req.body.email+ " says: "+ req.body.message
   }, function(err, data){
     if(err){
