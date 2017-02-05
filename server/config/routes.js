@@ -1,37 +1,27 @@
 var path = require('path');
 var portfolio = require('../controllers/portfolio.js')//we can get functions from portfolio
-var twiliokeys = require('./twiliokeys.js')
-console.log("\n\n\n!!!!\nTWILIO KEYS:")
-console.log(twiliokeys.SID, twiliokeys.token)
-var client = require('twilio')(twiliokeys.SID, twiliokeys.token);
-module.exports = function(app){
-	app.get('/portfolio', function(req, res) {
-		console.log('/portfolio')
-   		portfolio.index(req,res)
 
-	})
+module.exports = function(app){
 
 app.get('/', function(req, res){
   res.render('index')
 }),
 
-app.post('/msg_portfolio', function(req, res){
-  client.sendMessage({
-    to : twiliokeys.myphone,
-    from : twiliokeys.mytwiliophone,
-    body : "This is a Message from your portfolio: Name: " + req.body.name+ " Email: "+ req.body.email+ " says: "+ req.body.message
-  }, function(err, data){
-    if(err){
-      console.log("ERR", err);
-    }
-    else{
-      console.log(data);
-    }
-  });
-  res.send('Thank You, your messge was sent. Kamran will contact you as soon as possible.');
-});
+app.post('/msg_portfolio', portfolio.msg_portfolio);
 
-app.get('/sendmessage', portfolio.send_message);
+app.get('/login', portfolio.login);
+app.post('/sendmessage', portfolio.send_message);
+
+
+
+	//// Send Messages to Subscribers
+app.post('/message/send', portfolio.sendMessages);
+
+/// Incoming Message
+// app.post('/message', function(req, res){
+// console.log("\n\n\n\n\n Working ")
+// portfolio.webhook;
+// });
 
 // app.get('/test', function(req, res){
 //   client.sendMessage({
@@ -48,6 +38,7 @@ app.get('/sendmessage', portfolio.send_message);
 //   });
 // });
 
+		// TEST MESSAGE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 app.post('/message', function(req, res){
   console.log(req.body);
   var msgFrom = req.body.From;

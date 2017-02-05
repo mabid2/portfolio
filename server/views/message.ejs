@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Send Twilio Message</title>
+  </head>
+  <body>
+    <% if (admin == true ){%>
+    <h1>Send a Message to all people stored on this Account</h1>
+    <form action="/message/send" method="post">
+      <label for="Message">Message</label><textarea name="message" placeholder="Please Enter a Message" rows="8" cols="80"></textarea><br>
+      <label for="Media">Media Url</label><input type="text" name="url" placeholder="Enter an Optional Url"><br>
+      <input type="submit" value="Send Message!!">
+    </form>
+    <% } %>
+  </body>
+</html>

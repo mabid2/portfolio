@@ -11,7 +11,7 @@ var models_path = path.join(__dirname, './../models');
 var reg           = new RegExp( ".js$", "i" )
 
 
-var dbURI         = 'mongodb://localhost/portfolio';
+var dbURI         = 'mongodb://localhost/alrashad_subscribers';
 
 mongoose.connect( dbURI );
 /*

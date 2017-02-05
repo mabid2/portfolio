@@ -5,7 +5,10 @@
  *
  * Made By MaterializeCSS.com
  */
-
+#kami_pic {
+  margin : 530px 0px 0px 70px;
+  position: absolute;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
