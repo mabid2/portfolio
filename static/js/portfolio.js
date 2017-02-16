@@ -27,7 +27,7 @@ $(document).ready(function(){
 		preview_pane.html('<iframe src="'+ list_item.attr('href') +'" frameborder="0" width="100%" height="400px"></iframe>');
 
 		description_block.html(list_item.attr('data-description'));
-		
+
 		technologies_block.html('<b>Technologies Used:</b> '+ list_item.attr('data-technologies'));
 		title_block.html(list_item.attr('data-title'));
 		info_link.html('<a href="'+ list_item.attr('data-link') +'">'+ list_item.attr('data-link') +'</a>');

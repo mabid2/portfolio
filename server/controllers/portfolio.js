@@ -1,7 +1,7 @@
 console.log('portfolio server controller');
 var twiliokeys = require('../config/twiliokeys');
-console.log("\n\n\n!!!!\nTWILIO KEYS:")
-console.log(twiliokeys.SID, twiliokeys.token)
+// console.log("\n\n\n!!!!\nTWILIO KEYS:")
+// console.log(twiliokeys.SID, twiliokeys.token)
 var client = require('twilio')(twiliokeys.SID, twiliokeys.token);
 var mongoose = require('mongoose');//a controller talk to mongoose and get a model
 var Subscriber = require('../models/Subscriber');
@@ -9,7 +9,7 @@ var Subscriber = require('../models/Subscriber');
 //we r exporting it to require it in config/routes.js
 module.exports = {
   login : function(req, res){
-    console.log('Yayyyyyyyyyyyyyyyyyyy');
+    // console.log('Yayyyyyyyyyyyyyyyyyyy');
     res.render('login');
   },
   send_message: function(req, res){
@@ -24,19 +24,24 @@ module.exports = {
     }
   },
   msg_portfolio: function(req, res){
-    client.sendMessage({
-      to : twiliokeys.myphone,
-      from : twiliokeys.mytwiliophone,
-      body : "This is a Message from your portfolio: Name: " + req.body.name+ " Email: "+ req.body.email+ " says: "+ req.body.message
-    }, function(err, data){
-      if(err){
-        console.log("ERR", err);
-      }
-      else{
-        console.log(data);
-      }
-    });
-    res.send('Thank You, your messge was sent. Kamran will contact you as soon as possible.');
+    if(req.body.name.length == 0 || req.body.email.length == 0){
+      res.send('Error!!!  Name and Email fields are required. Please go back and enter Name and Email!!');
+    }
+    else {
+      client.sendMessage({
+        to : twiliokeys.myphone,
+        from : twiliokeys.mytwiliophone,
+        body : "This is a Message from your portfolio: Name: " + req.body.name+ " Email: "+ req.body.email+ " says: "+ req.body.message
+      }, function(err, data){
+        if(err){
+          console.log("ERR", err);
+        }
+        else{
+          console.log(data);
+        }
+      });
+      res.send('Thank You, your messge was sent. Kamran will contact you as soon as possible.');
+    }
   },
 
 

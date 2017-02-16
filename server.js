@@ -15,7 +15,6 @@ var app = express();
 var session = require('express-session');
 
 
-
 // require the mongoose configuration file which does the rest for us
 require('./server/config/mongoose.js');
 
